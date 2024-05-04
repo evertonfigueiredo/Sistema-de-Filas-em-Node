@@ -32,4 +32,10 @@ Você vai encontrar algo como
 CONTAINER ID   IMAGE    COMMAND   CREATED     STATUS  PORTS  NAMES
 4902315872e9   redis:alpine   "docker-entrypoint.s…"   9 seconds ago   Up 8 seconds   0.0.0.0:6379->6379/tcp   redis
 ```
+## Verificando Filas
 
+Para você poder visualizar as filas do projeto basta acessar
+
+```
+http://localhost:3333/admin/queues/
+```

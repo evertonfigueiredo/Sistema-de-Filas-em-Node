@@ -21,7 +21,7 @@ let QueueList = await Queue.queues.map(queue => {
 
 app.locals.MonitoroQueues = QueueList
 
-app.use('/admin/queues',monitoro)
+app.use('/admin/queues', monitoro)
 
 app.listen(3333, () => {
     console.log('Server running on localhost:3333');
