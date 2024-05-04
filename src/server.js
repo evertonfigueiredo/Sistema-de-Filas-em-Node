@@ -41,21 +41,3 @@ app.use("/admin/queues", serverAdapter.getRouter());
 app.listen(3333, () => {
     console.log('Server running on localhost:3333');
 });
-
-
-// --------- Monitoro ------
-
-// import Queue from './app/lib/Queue.js';
-// import monitoro from 'monitoro'
-
-// let QueueList = await Queue.queues.map(queue => {
-//     return {
-//         "name": queue.name,
-//         "hostId": "redis",
-//         "url": "redis://localhost:6379"
-//     }
-// });
-
-// app.locals.MonitoroQueues = QueueList
-
-// app.use('/admin/queues', monitoro)
