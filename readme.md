@@ -32,6 +32,13 @@ Você vai encontrar algo como
 CONTAINER ID   IMAGE    COMMAND   CREATED     STATUS  PORTS  NAMES
 4902315872e9   redis:alpine   "docker-entrypoint.s…"   9 seconds ago   Up 8 seconds   0.0.0.0:6379->6379/tcp   redis
 ```
+
+## Criando Fila
+
+Para você criar uma fila dentro do projeto basta criar um novo arquivo dentro da pasta ``src/app/jobs`` e utilizar o padrão dos arquivos que já existem.
+
+Para que a sua fila criada funcione, você deve acessar o arquivo ``src/app/jobs/index.js`` e adicionar ele na lista de exportação.
+
 ## Verificando Filas
 
 Para você poder visualizar as filas do projeto basta acessar
