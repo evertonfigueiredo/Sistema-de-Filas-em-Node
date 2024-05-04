@@ -9,7 +9,7 @@ export default {
         attempts: 1 // Vezes de re-tentativa
     },
     async handle({ data }) {
-        const { user } = dataa
+        const { user } = data
 
        console.log(user);
     }
