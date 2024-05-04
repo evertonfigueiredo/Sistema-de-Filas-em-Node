@@ -4,15 +4,22 @@ Esse projeto é focado na criação de um projeto para aprender um pouco como o 
 
 ## Iniciando o projeto 
 
-Para iniciar o projeto você roda o seguinte comando 
+Para iniciar o projeto você roda os seguintes comandos:
 
+```
+npm i
+```
 ```
 npx nodemon .\src\server.js
 ```
 
-Logo que aparecer a mensagem ``Server Run`` é sinal que o projeto já esta rodando 
+Logo que aparecer a mensagem:
+```
+Server running on localhost:3333
+```
+Com isso é sinal que o projeto já esta rodando.
 
-## Iniciando as Filas com Docker
+## Iniciando as Filas
 
 Para iniciar as filas, estarei utilizando o docker para iniciar o Redis na sua versão Alpine, para isso irei usar o seguinte comando.
 
@@ -32,6 +39,13 @@ Você vai encontrar algo como
 CONTAINER ID   IMAGE    COMMAND   CREATED     STATUS  PORTS  NAMES
 4902315872e9   redis:alpine   "docker-entrypoint.s…"   9 seconds ago   Up 8 seconds   0.0.0.0:6379->6379/tcp   redis
 ```
+
+Logo em seguida você ira rodar o seguinte comando:
+
+```
+npx nodemon .\src\queue.js
+```
+
 
 ## Criando Fila
 
