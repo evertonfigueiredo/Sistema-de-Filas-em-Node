@@ -13,10 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@bull-board/api": "^5.17.0",
+    "@bull-board/express": "^5.17.0",
+    "@bull-board/ui": "^5.17.0",
     "bull": "^4.12.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "monitoro": "^0.1.6",
     "nodemailer": "^6.9.13",
     "nodemon": "^3.1.0"
   },
